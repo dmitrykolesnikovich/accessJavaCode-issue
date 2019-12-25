@@ -39,6 +39,7 @@ android {
 
     sourceSets {
         main {
+            java.srcDirs += "src/jvmMain/kotlin"
             manifest.srcFile "src/androidMain/AndroidManifest.xml"
             res.srcDirs = ["src/androidMain/resources"]
             assets.srcDirs = ["src/commonMain/resources"]

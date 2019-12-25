@@ -9,9 +9,8 @@ In short: I have Java code in module "library1" and Kotlin code accessing it fro
 When I am trying to build this sample project I am getting "Unresolved reference" error:
 
 ```
-> Task :library2:compileDebugKotlinAndroid FAILED
-e: /Users/dmitrykolesnikovich/workspace/accessJavaCode-issue/library2/src/jvmMain/kotlin/accessJavaCode/issue/library2/AccessJavaCodeExternally.kt: (3, 38): Unresolved reference: JavaCode
-e: /Users/dmitrykolesnikovich/workspace/accessJavaCode-issue/library2/src/jvmMain/kotlin/accessJavaCode/issue/library2/AccessJavaCodeExternally.kt: (5, 34): Unresolved reference: JavaCode
+e: accessJavaCode-issue/library2/src/jvmMain/kotlin/accessJavaCode/issue/library2/AccessJavaCodeExternally.kt: (3, 38): Unresolved reference: JavaCode
+e: accessJavaCode-issue/library2/src/jvmMain/kotlin/accessJavaCode/issue/library2/AccessJavaCodeExternally.kt: (5, 34): Unresolved reference: JavaCode
 ```
 
 Most probably there is something in my Gradle configuration goes wrong, but I am stuck with understanding what exactly.

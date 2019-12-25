@@ -6,7 +6,7 @@ In short: I have Java code in module "library1" and Kotlin code accessing it fro
 
 ![library2 depends on library1](docs/dependency-graph.png)
 
-When I am trying to build this sample project I am getting error:
+When I am trying to build this sample project I am getting "Unresolved reference" error:
 
 ```
 > Task :library2:compileDebugKotlinAndroid FAILED

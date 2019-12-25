@@ -1,0 +1,4 @@
+enableFeaturePreview('GRADLE_METADATA')
+
+include(":library1")
+include(":library2")

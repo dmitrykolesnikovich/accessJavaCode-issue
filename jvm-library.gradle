@@ -1,0 +1,59 @@
+apply plugin: "org.jetbrains.kotlin.multiplatform"
+apply plugin: "com.android.library"
+
+kotlin {
+    targets {
+        jvm()
+        android()
+    }
+    sourceSets {
+        jvmMain {
+            dependencies {
+                api kotlin("stdlib-common")
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$kotlinx_coroutines_version"
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines_version"
+                api "org.jetbrains.kotlinx:kotlinx-io:$kotlinx_io_version"
+                api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+                api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$kotlinx_coroutines_version"
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$kotlinx_coroutines_version"
+                api "org.jetbrains.kotlinx:kotlinx-io-jvm:$kotlinx_io_version"
+            }
+        }
+        androidMain {
+            dependencies {
+                api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$kotlinx_coroutines_version"
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$kotlinx_coroutines_version"
+                api "org.jetbrains.kotlinx:kotlinx-io-jvm:$kotlinx_io_version"
+                api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_version"
+            }
+            dependsOn jvmMain
+        }
+    }
+}
+
+android {
+    compileSdkVersion 28
+
+    sourceSets {
+        main {
+            manifest.srcFile "src/androidMain/AndroidManifest.xml"
+            res.srcDirs = ["src/androidMain/resources"]
+            assets.srcDirs = ["src/commonMain/resources"]
+        }
+    }
+
+    defaultConfig {
+        minSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    packagingOptions {
+        exclude "META-INF/DEPENDENCIES"
+        exclude "META-INF/LICENSE.md"
+        exclude "META-INF/LICENSE-notice.md"
+    }
+}

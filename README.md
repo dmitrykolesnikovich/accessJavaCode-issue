@@ -20,3 +20,7 @@ Any advice and suggestions will be greatly appreciated.
 ### Topic on Kotlin Forum
 
 https://discuss.kotlinlang.org/t/problem-with-accessing-java-code-from-kotlin-code-externally/15597
+
+### How I resolve this
+
+https://github.com/PocketByte/locolaser-kotlin-mpp-example

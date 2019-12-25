@@ -18,4 +18,4 @@ e: /Users/dmitrykolesnikovich/workspace/accessJavaCode-issue/library2/src/jvmMai
 
 Most probably there is something in my Gradle configuration goes wrong, but I am stuck with understanding what exactly.
 
-Any suggestion very appreciated.
+Any advice and suggestions will be greatly appreciated.

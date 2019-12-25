@@ -2,7 +2,7 @@
 
 https://discuss.kotlinlang.org/t/problem-with-accessing-java-code-from-kotlin-code-externally/15597
 
-### Problem with accessing Java code from Kotlin code externally
+### Problem with sharing Java code between Android and JVM targets
 
 I am trying to share Java code between android and desktop using Kotlin Multiplatform feature.
 

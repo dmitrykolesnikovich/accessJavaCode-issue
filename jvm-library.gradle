@@ -10,25 +10,10 @@ kotlin {
         jvmMain {
             dependencies {
                 api kotlin("stdlib-common")
-                api "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$kotlinx_coroutines_version"
-                api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines_version"
-                api "org.jetbrains.kotlinx:kotlinx-io:$kotlinx_io_version"
-                api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
-
                 api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-                api "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$kotlinx_coroutines_version"
-                api "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$kotlinx_coroutines_version"
-                api "org.jetbrains.kotlinx:kotlinx-io-jvm:$kotlinx_io_version"
             }
         }
         androidMain {
-            dependencies {
-                api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-                api "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$kotlinx_coroutines_version"
-                api "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:$kotlinx_coroutines_version"
-                api "org.jetbrains.kotlinx:kotlinx-io-jvm:$kotlinx_io_version"
-                api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_version"
-            }
             dependsOn jvmMain
         }
     }

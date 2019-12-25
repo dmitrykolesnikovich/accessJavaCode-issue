@@ -1,7 +1,3 @@
-### Topic on Kotlin Forum
-
-https://discuss.kotlinlang.org/t/problem-with-accessing-java-code-from-kotlin-code-externally/15597
-
 ### Problem with sharing Java code between Android and JVM targets
 
 I am trying to share Java code between android and desktop using Kotlin Multiplatform feature.
@@ -21,3 +17,7 @@ e: /Users/dmitrykolesnikovich/workspace/accessJavaCode-issue/library2/src/jvmMai
 Most probably there is something in my Gradle configuration goes wrong, but I am stuck with understanding what exactly.
 
 Any advice and suggestions will be greatly appreciated.
+
+### Topic on Kotlin Forum
+
+https://discuss.kotlinlang.org/t/problem-with-accessing-java-code-from-kotlin-code-externally/15597

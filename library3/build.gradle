@@ -1,0 +1,7 @@
+apply from: "../jvm-library.gradle"
+
+kotlin.sourceSets {
+    jvmMain.dependencies {
+        api project(":library2")
+    }
+}

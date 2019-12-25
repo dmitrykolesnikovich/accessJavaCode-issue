@@ -39,7 +39,7 @@ android {
 
     sourceSets {
         main {
-            java.srcDirs += "src/jvmMain/kotlin"
+            java.srcDirs += "src/jvmMain/kotlin" // << that's what makes Android target recognize Java
             manifest.srcFile "src/androidMain/AndroidManifest.xml"
             res.srcDirs = ["src/androidMain/resources"]
             assets.srcDirs = ["src/commonMain/resources"]

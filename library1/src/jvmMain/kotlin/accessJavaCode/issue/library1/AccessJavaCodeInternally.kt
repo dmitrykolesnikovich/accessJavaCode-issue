@@ -1,3 +1,3 @@
-package mppissue.library1
+package accessJavaCode.issue.library1
 
 class AccessJavaCodeInternally : JavaCode()

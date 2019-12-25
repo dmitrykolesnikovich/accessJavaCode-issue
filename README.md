@@ -1,3 +1,8 @@
+### Issue is resolved
+
+I resolved this issue myself by renaming directory `jvmMain/kotlin` to `jvmMain/java`. But now IntelliJ IDEA can not
+resolve jvmMain/java as source directory. Is there any IntelliJ specific hack for this?
+
 ### Problem with sharing Java code between Android and JVM targets
 
 I am trying to share Java code between android and desktop using Kotlin Multiplatform feature.
@@ -20,7 +25,3 @@ Any advice and suggestions will be greatly appreciated.
 ### Topic on Kotlin Forum
 
 https://discuss.kotlinlang.org/t/problem-with-accessing-java-code-from-kotlin-code-externally/15597
-
-### How I resolve this
-
-https://github.com/PocketByte/locolaser-kotlin-mpp-example

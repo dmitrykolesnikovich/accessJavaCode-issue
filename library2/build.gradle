@@ -1,7 +1,26 @@
-apply from: "../jvm-library.gradle"
+apply plugin: "kotlin-multiplatform"
+apply plugin: "com.android.library"
 
-kotlin.sourceSets {
-    jvmMain.dependencies {
-        api project(":library1")
+kotlin{
+    jvm()
+    android()
+
+    sourceSets {
+        jvmMain.dependencies {
+            api project(":library1")
+        }
+        androidMain {
+            dependsOn jvmMain
+        }
+    }
+}
+
+android {
+    compileSdkVersion 28
+    sourceSets {
+        main {
+            java.srcDirs += "src/jvmMain/kotlin" // << that's what makes Android target recognize Java
+            manifest.srcFile "src/androidMain/AndroidManifest.xml"
+        }
     }
 }

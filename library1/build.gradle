@@ -1,1 +1,16 @@
-apply from: "../jvm-library.gradle"
+apply plugin: "kotlin-multiplatform"
+
+kotlin {
+    jvm {
+        withJava()
+    }
+
+    sourceSets {
+        jvmMain {
+            dependencies {
+                api kotlin("stdlib-common")
+                api kotlin("stdlib-jdk8")
+            }
+        }
+    }
+}

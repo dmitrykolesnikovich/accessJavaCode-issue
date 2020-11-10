@@ -1,4 +1,4 @@
-### Problem with sharing Java code between Android and JVM targets
+Question on StackOverflow: https://stackoverflow.com/questions/59479020/how-to-share-java-code-between-android-and-jvm-targets-with-kotlin-multiplatfor
 
 I am trying to share Java code between android and desktop using Kotlin Multiplatform feature.
 
@@ -12,5 +12,3 @@ When I am trying to build this sample project I am getting `Unresolved reference
 > Task :library2:compileKotlinJvm FAILED
 e: ../CallingJavaCodeFromKotlinLibrary2.kt: (3, 52): Unresolved reference: JavaCode
 ```
-
-Question on StackOverflow: https://stackoverflow.com/questions/59479020/how-to-share-java-code-between-android-and-jvm-targets-with-kotlin-multiplatfor

@@ -7,15 +7,8 @@ kotlin {
         android()
     }
     sourceSets {
-        jvmMain {
-            dependencies {
-                api kotlin("stdlib-common")
-                api kotlin("stdlib-jdk8")
-            }
-        }
-        androidMain {
-            dependsOn jvmMain
-        }
+        jvmMain {}
+        androidMain { dependsOn jvmMain }
     }
 }
 
@@ -23,7 +16,7 @@ android {
     compileSdkVersion 28
     sourceSets {
         main {
-            java.srcDirs += "src/jvmMain/kotlin" // this makes Android target recognize Java
+            java.srcDirs += "src/jvmMain/kotlin"
             manifest.srcFile "src/androidMain/AndroidManifest.xml"
         }
     }

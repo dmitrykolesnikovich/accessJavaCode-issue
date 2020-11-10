@@ -2,7 +2,7 @@
 
 I am trying to share Java code between android and desktop using Kotlin Multiplatform feature.
 
-In short: I have Java code in module "library1" and Kotlin code accessing it from module ":library2".
+In short: I have Java code in module "library1" and Kotlin code accessing it from module "library2".
 
 ![library2 depends on library1](docs/dependency-graph.png)
 

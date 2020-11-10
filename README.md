@@ -6,7 +6,7 @@ https://stackoverflow.com/questions/59479020/how-to-share-java-code-between-andr
 
 I am trying to share Java code between android and desktop using Kotlin Multiplatform feature.
 
-I have Java code in module "library1" and Kotlin code accessing it from module "library2".
+I have Java code in `library1` and Kotlin code accessing it from `library2`.
 
 ![library2 depends on library1](dependencies.png)
 

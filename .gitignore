@@ -13,3 +13,4 @@ gradle-app.setting
 !gradle-wrapper.jar
 *.iws
 build/
+local.properties

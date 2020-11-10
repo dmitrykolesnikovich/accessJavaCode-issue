@@ -2,7 +2,7 @@
 
 https://stackoverflow.com/questions/59479020/how-to-share-java-code-between-android-and-jvm-targets-with-kotlin-multiplatfor
 
-### Description
+### Issue Description
 
 I am trying to share Java code between android and desktop using Kotlin Multiplatform feature.
 

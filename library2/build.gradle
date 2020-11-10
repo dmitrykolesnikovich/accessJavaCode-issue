@@ -1,4 +1,4 @@
-apply from: "../jvm-library.gradle"
+apply from: "../library.gradle"
 
 kotlin.sourceSets {
     jvmMain.dependencies {

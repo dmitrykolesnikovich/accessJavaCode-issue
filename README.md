@@ -14,9 +14,3 @@ e: ../AccessJavaCodeExternally.kt: (3, 38): Unresolved reference: JavaCode
 ```
 
 Most probably there is something in my Gradle configuration goes wrong, but I am stuck with understanding what exactly.
-
-Any advice and suggestions will be greatly appreciated.
-
-### Topic on Kotlin Forum
-
-https://discuss.kotlinlang.org/t/problem-with-accessing-java-code-from-kotlin-code-externally/15597

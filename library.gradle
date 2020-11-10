@@ -2,10 +2,7 @@ apply plugin: "kotlin-multiplatform"
 apply plugin: "com.android.library"
 
 kotlin {
-    targets {
-        jvm()
-        android()
-    }
+
     sourceSets {
         jvmMain {}
         androidMain { dependsOn jvmMain }

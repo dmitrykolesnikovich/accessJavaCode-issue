@@ -8,7 +8,9 @@ kotlin {
     }
     sourceSets {
         jvmMain {}
-        androidMain { dependsOn jvmMain }
+        androidMain {
+            dependsOn jvmMain
+        }
     }
 }
 
@@ -16,8 +18,8 @@ android {
     compileSdkVersion 28
     sourceSets {
         main {
+            java.srcDirs = ["src/jvmMain/kotlin"]
             manifest.srcFile "AndroidManifest.xml"
-            java.srcDirs += "src/jvmMain/kotlin"
         }
     }
 }

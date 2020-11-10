@@ -12,5 +12,3 @@ When I am trying to build this sample project I am getting `Unresolved reference
 > Task :library2:compileKotlinJvm FAILED
 e: ../CallingJavaCodeFromKotlinLibrary2.kt: (3, 52): Unresolved reference: JavaCode
 ```
-
-Most probably there is something in my Gradle configuration goes wrong, but I am stuck with understanding what exactly.

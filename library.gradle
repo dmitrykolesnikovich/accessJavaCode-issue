@@ -2,7 +2,10 @@ apply plugin: "kotlin-multiplatform"
 apply plugin: "com.android.library"
 
 kotlin {
-
+    targets {
+        jvm()
+        android()
+    }
     sourceSets {
         jvmMain {}
         androidMain { dependsOn jvmMain }
@@ -13,8 +16,8 @@ android {
     compileSdkVersion 28
     sourceSets {
         main {
+            manifest.srcFile "AndroidManifest.xml"
             java.srcDirs += "src/jvmMain/kotlin"
-            manifest.srcFile "src/androidMain/AndroidManifest.xml"
         }
     }
 }
